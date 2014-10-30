@@ -1,0 +1,1238 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14154494,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 11:58:38 UTC",
+                "End Time": "2014-09-16 12:05:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.470156,
+                    28.417149
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14154498,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 11:58:38 UTC",
+                "End Time": "2014-09-16 12:23:38 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.470156,
+                    28.417149
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14156653,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:04:17 UTC",
+                "End Time": "2014-09-16 12:11:38 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.452599,
+                    28.414887
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14158756,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:10:15 UTC",
+                "End Time": "2014-09-16 12:17:42 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460927,
+                    28.410207
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14167039,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:16:26 UTC",
+                "End Time": "2014-09-16 13:13:34 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460936,
+                    28.410204
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14167048,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:16:26 UTC",
+                "End Time": "2014-09-16 12:38:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460936,
+                    28.410204
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14167468,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 12:37:09 UTC",
+                "End Time": "2014-09-16 13:01:37 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.4599,
+                    28.412347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14167482,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 12:37:09 UTC",
+                "End Time": "2014-09-16 12:39:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.4599,
+                    28.412347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14168784,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 12:38:21 UTC",
+                "End Time": "2014-09-16 12:42:41 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459858,
+                    28.412414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14168788,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 12:38:21 UTC",
+                "End Time": "2014-09-16 13:06:33 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459858,
+                    28.412414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14169472,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:40:14 UTC",
+                "End Time": "2014-09-16 12:44:37 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460114,
+                    28.412219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14169645,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 12:39:05 UTC",
+                "End Time": "2014-09-16 12:44:43 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459917,
+                    28.412339
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14171263,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 12:44:49 UTC",
+                "End Time": "2014-09-16 12:48:36 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459879,
+                    28.412384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14172056,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:44:53 UTC",
+                "End Time": "2014-09-16 12:50:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460114,
+                    28.412219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14172183,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 12:44:55 UTC",
+                "End Time": "2014-09-16 12:50:42 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459902,
+                    28.412367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14173958,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 12:47:19 UTC",
+                "End Time": "2014-09-16 12:54:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459881,
+                    28.412385
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14174321,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 12:49:38 UTC",
+                "End Time": "2014-09-16 12:55:38 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.459906,
+                    28.412361
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14174584,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:49:11 UTC",
+                "End Time": "2014-09-16 12:56:35 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460114,
+                    28.412219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14176350,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 12:53:19 UTC",
+                "End Time": "2014-09-16 13:00:44 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462581,
+                    28.414017
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14176851,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 12:55:21 UTC",
+                "End Time": "2014-09-16 13:01:36 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460114,
+                    28.412219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14179416,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:00:08 UTC",
+                "End Time": "2014-09-16 13:07:40 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461938,
+                    28.408325
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14182910,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 13:14:20 UTC",
+                "End Time": "2014-09-16 13:33:01 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462508,
+                    28.407601
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14182915,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 13:14:20 UTC",
+                "End Time": "2014-09-16 13:16:05 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462508,
+                    28.407601
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14184948,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 13:14:39 UTC",
+                "End Time": "2014-09-16 13:22:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462508,
+                    28.407601
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14185753,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 13:21:09 UTC",
+                "End Time": "2014-09-16 13:30:01 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460676,
+                    28.408059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14185754,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 13:21:09 UTC",
+                "End Time": "2014-09-16 13:24:04 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460676,
+                    28.408059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14186879,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:21:05 UTC",
+                "End Time": "2014-09-16 13:27:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.457286,
+                    28.40674
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14186882,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:21:05 UTC",
+                "End Time": "2014-09-16 13:33:01 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.457286,
+                    28.40674
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14186902,
+                "Observer": "7403E92A2F88423182B74CBCB4AEE798",
+                "Start Time": "2014-09-16 13:21:07 UTC",
+                "End Time": "2014-09-16 13:27:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460718,
+                    28.408041
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14193966,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:41:58 UTC",
+                "End Time": "2014-09-16 14:03:05 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.464123,
+                    28.405897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14193977,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:41:58 UTC",
+                "End Time": "2014-09-16 13:45:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.464123,
+                    28.405897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14195440,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 13:41:53 UTC",
+                "End Time": "2014-09-16 13:48:02 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462536,
+                    28.407431
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14195446,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 13:41:53 UTC",
+                "End Time": "2014-09-16 14:00:31 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462536,
+                    28.407431
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14196279,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:43:36 UTC",
+                "End Time": "2014-09-16 13:51:02 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.463532,
+                    28.403922
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14197488,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 13:46:32 UTC",
+                "End Time": "2014-09-16 13:54:02 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.464854,
+                    28.408914
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14198427,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 13:49:35 UTC",
+                "End Time": "2014-09-16 13:57:04 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.467089,
+                    28.406793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14209917,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 14:30:28 UTC",
+                "End Time": "2014-09-16 14:45:01 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461146,
+                    28.410661
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14209923,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 14:30:28 UTC",
+                "End Time": "2014-09-16 14:33:05 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461146,
+                    28.410661
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14210763,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 14:30:24 UTC",
+                "End Time": "2014-09-16 14:48:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460708,
+                    28.409628
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14210780,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 14:30:24 UTC",
+                "End Time": "2014-09-16 14:36:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460708,
+                    28.409628
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14211726,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 14:31:41 UTC",
+                "End Time": "2014-09-16 14:39:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461146,
+                    28.410661
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14212818,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 14:34:38 UTC",
+                "End Time": "2014-09-16 14:42:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.46083899999999,
+                    28.410473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14218189,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 14:55:19 UTC",
+                "End Time": "2014-09-16 15:05:03 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462794,
+                    28.405058
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14218208,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 14:55:19 UTC",
+                "End Time": "2014-09-16 14:59:02 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.462794,
+                    28.405058
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14221644,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 15:03:27 UTC",
+                "End Time": "2014-09-16 15:22:33 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460074,
+                    28.40966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14221648,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 15:03:27 UTC",
+                "End Time": "2014-09-16 15:10:31 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460074,
+                    28.40966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14223516,
+                "Observer": "05DDB78AFF6749E683BEEA8AA1E0FB0A",
+                "Start Time": "2014-09-16 15:13:31 UTC",
+                "End Time": "2014-09-16 15:16:33 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460074,
+                    28.40966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14224022,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 15:13:32 UTC",
+                "End Time": "2014-09-16 15:23:36 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461421,
+                    28.410637
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14224027,
+                "Observer": "8F18E406DD0248A991A831FC5D5C5B15",
+                "Start Time": "2014-09-16 15:13:32 UTC",
+                "End Time": "2014-09-16 15:17:34 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.461421,
+                    28.410637
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14321087,
+                "Observer": "38FEB144656F4F9FBB53C0F818A62ACE",
+                "Start Time": "2014-09-16 19:00:31 UTC",
+                "End Time": "2014-09-16 19:14:39 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460524,
+                    28.408416
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "SEA_0006_0001",
+                "UUID": "5ECD88CB-08FB-4557-9788-4BBDFFD9B180",
+                "Major": 6,
+                "Minor": 1,
+                "Visit": 14321096,
+                "Observer": "38FEB144656F4F9FBB53C0F818A62ACE",
+                "Start Time": "2014-09-16 19:00:31 UTC",
+                "End Time": "2014-09-16 19:08:34 UTC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.460524,
+                    28.408416
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -81.470156,
+                        28.417149
+                    ],
+                    [
+                        -81.470156,
+                        28.417149
+                    ],
+                    [
+                        -81.452599,
+                        28.414887
+                    ],
+                    [
+                        -81.460927,
+                        28.410207
+                    ],
+                    [
+                        -81.460936,
+                        28.410204
+                    ],
+                    [
+                        -81.460936,
+                        28.410204
+                    ],
+                    [
+                        -81.4599,
+                        28.412347
+                    ],
+                    [
+                        -81.4599,
+                        28.412347
+                    ],
+                    [
+                        -81.459858,
+                        28.412414
+                    ],
+                    [
+                        -81.459858,
+                        28.412414
+                    ],
+                    [
+                        -81.460114,
+                        28.412219
+                    ],
+                    [
+                        -81.459917,
+                        28.412339
+                    ],
+                    [
+                        -81.459879,
+                        28.412384
+                    ],
+                    [
+                        -81.460114,
+                        28.412219
+                    ],
+                    [
+                        -81.459902,
+                        28.412367
+                    ],
+                    [
+                        -81.459881,
+                        28.412385
+                    ],
+                    [
+                        -81.459906,
+                        28.412361
+                    ],
+                    [
+                        -81.460114,
+                        28.412219
+                    ],
+                    [
+                        -81.462581,
+                        28.414017
+                    ],
+                    [
+                        -81.460114,
+                        28.412219
+                    ],
+                    [
+                        -81.461938,
+                        28.408325
+                    ],
+                    [
+                        -81.462508,
+                        28.407601
+                    ],
+                    [
+                        -81.462508,
+                        28.407601
+                    ],
+                    [
+                        -81.462508,
+                        28.407601
+                    ],
+                    [
+                        -81.460676,
+                        28.408059
+                    ],
+                    [
+                        -81.460676,
+                        28.408059
+                    ],
+                    [
+                        -81.457286,
+                        28.40674
+                    ],
+                    [
+                        -81.457286,
+                        28.40674
+                    ],
+                    [
+                        -81.460718,
+                        28.408041
+                    ],
+                    [
+                        -81.464123,
+                        28.405897
+                    ],
+                    [
+                        -81.464123,
+                        28.405897
+                    ],
+                    [
+                        -81.462536,
+                        28.407431
+                    ],
+                    [
+                        -81.462536,
+                        28.407431
+                    ],
+                    [
+                        -81.463532,
+                        28.403922
+                    ],
+                    [
+                        -81.464854,
+                        28.408914
+                    ],
+                    [
+                        -81.467089,
+                        28.406793
+                    ],
+                    [
+                        -81.461146,
+                        28.410661
+                    ],
+                    [
+                        -81.461146,
+                        28.410661
+                    ],
+                    [
+                        -81.460708,
+                        28.409628
+                    ],
+                    [
+                        -81.460708,
+                        28.409628
+                    ],
+                    [
+                        -81.461146,
+                        28.410661
+                    ],
+                    [
+                        -81.460839,
+                        28.410473
+                    ],
+                    [
+                        -81.462794,
+                        28.405058
+                    ],
+                    [
+                        -81.462794,
+                        28.405058
+                    ],
+                    [
+                        -81.460074,
+                        28.40966
+                    ],
+                    [
+                        -81.460074,
+                        28.40966
+                    ],
+                    [
+                        -81.460074,
+                        28.40966
+                    ],
+                    [
+                        -81.461421,
+                        28.410637
+                    ],
+                    [
+                        -81.461421,
+                        28.410637
+                    ],
+                    [
+                        -81.460524,
+                        28.408416
+                    ],
+                    [
+                        -81.460524,
+                        28.408416
+                    ]
+                ]
+            }
+        }
+    ]
+}
