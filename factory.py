@@ -33,7 +33,7 @@ for row in all_rows:
 		sightings.beacon_name as Name, \
 		sightings.latitude as Latitude, \
 		sightings.longitude Longitude, \
-		sightings.start_time as "DateTime", \
+		sightings.start_time as "Date", \
 		locations.location as "Location" \
 	from sightings inner join locations \
 	on sightings.latitude = locations.latitude \
@@ -51,7 +51,7 @@ for row in all_rows:
 		
 		props = {
 			'Name':row[0],
-			'DateTime':row[3],
+			'Date':row[3],
 			'Location':row[4]
 		}
 		geom = {
