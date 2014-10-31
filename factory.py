@@ -43,7 +43,8 @@ for row in all_rows:
 	from beacons inner join sightings \
 	on beacons.beacon_name = sightings.beacon_name \
 	where beacons.beacon_name = "' + beacon + '" ' \
-	'order by beacons.beacon_name, sightings.visit_id;'
+	'and sightings.latitude != 0 \
+	order by beacons.beacon_name, sightings.visit_id;'
 
 	# execute sightings query
 	cursor.execute(sighting_query)
