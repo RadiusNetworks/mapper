@@ -3,6 +3,8 @@
 <head>
 <meta charset=utf-8 />
 <title>A simple map</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
@@ -12,11 +14,55 @@
 </style>
 </head>
 <body>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css' rel='stylesheet' />
+<style>
+/* Adjustments to account for mapbox.css box-sizing rules */
+.leaflet-control-zoomslider-knob { width:14px; height:6px; }
+.leaflet-container .leaflet-control-zoomslider-body {
+  -webkit-box-sizing:content-box;
+     -moz-box-sizing:content-box;
+          box-sizing:content-box;
+  }
+</style>
+
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRoZWxtcyIsImEiOiJ4aE9BbERzIn0.WcYmqbp2WUzljTZW_lOkbQ';
-var map = L.mapbox.map('map', 'davidhelms.k42a1dik')
-    .setView([40, -74.50], 9);
+
+var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {zoomControl: false})
+	.setView([28.410207, -81.460927], 15);
+	
+L.control.zoomslider().addTo(map);
+
+// As with any other AJAX request, this technique is subject to the Same Origin Policy:
+// http://en.wikipedia.org/wiki/Same_origin_policy
+// So the CSV file must be on the same domain as the Javascript, or the server
+// delivering it should support CORS.
+var featureLayer = L.mapbox.featureLayer()
+    .loadURL('http://developer.radiusnetworks.com/mapper/SEA_0008_0005.geojson')
+    .addTo(map);
+    
+featureLayer.on('ready', function() {
+
+	// Note that calling `.eachLayer` here depends on setting GeoJSON _directly_
+	// above. If you're loading GeoJSON asynchronously, like from CSV or from a file,
+	// you will need to do this within a `featureLayer.on('ready'` event.
+	featureLayer.eachLayer(function(layer) {
+	
+		var date = layer.feature.properties.Date;
+
+		// here you call `bindPopup` with a string of HTML you create - the feature
+		// properties declared above are available under `layer.feature.properties`
+		var content = '<h2>' + layer.feature.properties.Name + '<\/h2>' +
+			'<p>' + layer.feature.properties.Date + '</p>' +
+			'<p>' + layer.feature.properties.Location + '<\/p>';
+		layer.bindPopup(content);
+	});
+});
+
 </script>
+
 </body>
 </html>
