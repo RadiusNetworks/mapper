@@ -35,14 +35,27 @@
 
 <div id='map'></div>
 <div id='slider'></div>
-<script>
+<div id='legend' style='display:none;'>
+  	<p><strong id='legend_name'>BEACON NAME PLACEHOLDER</strong></p>
+  	Last Seen
+  	<hr>
+	<p id='legend_date'>DATE PLACEHOLDER</p>
+	<p id='legend_location'>LOCATION PLACEHOLDER</p>
+</div>
 
+<script>
 
 var geojson_url = 'http://developer.radiusnetworks.com/mapper/' + getParameterByName('beacon') + '.geojson';
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRoZWxtcyIsImEiOiJ4aE9BbERzIn0.WcYmqbp2WUzljTZW_lOkbQ';
-var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {zoomControl: false, attributionControl: false})
+var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {
+		zoomControl: false,
+		attributionControl: false,
+    	legendControl: { position: 'topright' }
+    })
 	.setView([28.410207, -81.460927], 5);
+	
+map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 	
 L.control.zoomslider().addTo(map);
 
@@ -80,7 +93,7 @@ function updatePolyline(line, polyline) {
 
 function bindPopup(layer) {
 	var content = '<h2>' + layer.feature.properties.Name + '<\/h2>' +
-		'<p>' + layer.feature.properties.Date + '</p>' +
+		'<p>' + toDate(layer.feature.properties.Date) + '</p>' +
 		'<p>' + layer.feature.properties.Location + '<\/p>';
 	layer.bindPopup(content);
 }
@@ -92,6 +105,8 @@ featureLayer.on('ready', function() {
 	// above. If you're loading GeoJSON asynchronously, like from CSV or from a file,
 	// you will need to do this within a `featureLayer.on('ready'` event.
 	var dates = [], date;
+	var locations = [];
+	var name;
 	featureLayer.eachLayer(function(layer) {
 	
 		if (layer.feature.geometry.type === "Point") {
@@ -101,9 +116,15 @@ featureLayer.on('ready', function() {
 			));
 			date = toDate(layer.feature.properties.Date);
 			dates.push(date);
+			locations.push(layer.feature.properties.Location);
+			name = layer.feature.properties.Name;
 		}
 		bindPopup(layer);
 	});
+	
+	$("#legend_name").text(name);
+	$("#legend_date").text(dates[dates.length - 1]);
+	$("#legend_location").text(locations[locations.length - 1]);
 	
 	var line = [];
 	this.eachLayer(function(marker) {
@@ -128,6 +149,7 @@ featureLayer.on('ready', function() {
         		hh = val.getHours(),
         		mm = val.getMinutes(),
         		ss = val.getSeconds(); 
+        return val;
         return YYYY + "-" + MM + "-" + DD + " " + hh + ":" + mm + ":" + ss + "UTC";
     	}
 	});
