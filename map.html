@@ -139,16 +139,18 @@ featureLayer.on('ready', function() {
  	 });
  	 updatePolyline(line, polyline);
  	 
-
+	min_date = new Date(dates[0]);
+	max_date = new Date(dates[dates.length - 1])
 	$("#slider").dateRangeSlider({
-		bounds:{
-			min: new Date(dates[0]),
-			max: new Date(dates[dates.length - 1])
-		},
 		defaultValues:{
-			min: new Date(dates[0]),
-			max: new Date(dates[dates.length - 1])
+			min: min_date,
+			max: max_date
 	  	},
+		bounds:{
+			min: new Date(min_date.getTime() - 1*60000),
+			max: new Date(max_date.getTime() + 1*60000)
+		},
+
 	  	step:{
     		minutes: 1
  		},
