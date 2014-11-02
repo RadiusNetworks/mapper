@@ -28,34 +28,17 @@ http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0001
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0002
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0003
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0004
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0005
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0006
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0007
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0006_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0009
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0010
 
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
-http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 
 
 
