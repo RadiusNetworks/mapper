@@ -20,6 +20,21 @@ from github and populate the map. Below are convenience links for all of the bea
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
+http://developer.radiusnetworks.com/mapper/map?beacon=SEA_0008_0008
 
 
 
