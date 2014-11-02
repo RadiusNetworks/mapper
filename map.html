@@ -35,19 +35,28 @@
 <div id='map'></div>
 <div id='slider'></div>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRoZWxtcyIsImEiOiJ4aE9BbERzIn0.WcYmqbp2WUzljTZW_lOkbQ';
 
+
+var geojson_url = 'http://developer.radiusnetworks.com/mapper/' + getParameterByName('beacon') + '.geojson';
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRoZWxtcyIsImEiOiJ4aE9BbERzIn0.WcYmqbp2WUzljTZW_lOkbQ';
 var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {zoomControl: false, attributionControl: false})
 	.setView([28.410207, -81.460927], 15);
+	
 L.control.zoomslider().addTo(map);
 
-// As with any other AJAX request, this technique is subject to the Same Origin Policy:
-// http://en.wikipedia.org/wiki/Same_origin_policy
-// So the CSV file must be on the same domain as the Javascript, or the server
-// delivering it should support CORS.
 var featureLayer = L.mapbox.featureLayer()
-    .loadURL('http://developer.radiusnetworks.com/mapper/SEA_0008_0005.geojson')
+    .loadURL(geojson_url)
     .addTo(map);
+
+var polyline = L.polyline([], {'color': '#666666'}).addTo(map);
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
     
 function toDate(str) {
 	ymd = str.split(" ")[0];
@@ -64,6 +73,17 @@ function toDate(str) {
 	return date;
 }
 
+function updatePolyline(line, polyline) {
+	polyline.setLatLngs(line, {'color': '#666666'});
+}
+
+function bindPopup(layer) {
+	var content = '<h2>' + layer.feature.properties.Name + '<\/h2>' +
+		'<p>' + layer.feature.properties.Date + '</p>' +
+		'<p>' + layer.feature.properties.Location + '<\/p>';
+	layer.bindPopup(content);
+}
+
 
 featureLayer.on('ready', function() {
 
@@ -74,27 +94,19 @@ featureLayer.on('ready', function() {
 	featureLayer.eachLayer(function(layer) {
 	
 		if (layer.feature.geometry.type === "Point") {
+			layer.setIcon(L.mapbox.marker.icon({'marker-color': '#ff7838'}));
 			date = toDate(layer.feature.properties.Date);
 			dates.push(date);
 		}
-			
-		// here you call `bindPopup` with a string of HTML you create - the feature
-		// properties declared above are available under `layer.feature.properties`
-		var content = '<h2>' + layer.feature.properties.Name + '<\/h2>' +
-			'<p>' + layer.feature.properties.Date + '</p>' +
-			'<p>' + layer.feature.properties.Location + '<\/p>';
-		layer.bindPopup(content);
-		
+		bindPopup(layer);
 	});
-
+	
 	var line = [];
 	this.eachLayer(function(marker) {
     	line.push(marker.getLatLng());
  	 });
-	var polyline_options = {
-   		color: '#000'
-	};
-	var polyline = L.polyline(line, polyline_options).addTo(map);
+ 	 updatePolyline(line, polyline);
+ 	 
 
 	$("#slider").dateRangeSlider({
 		bounds:{
@@ -120,15 +132,27 @@ featureLayer.on('ready', function() {
 
 $("#slider").on("valuesChanging", function(e, data) {
 
+	var i = -1;
 	featureLayer.setFilter(function(feature) {	
 		if (feature.geometry.type === "Point") {
+			i++;
 			date = toDate(feature.properties.Date);
 			if ((date < data.values.min) || (date > data.values.max)) {
+				polyline.spliceLatLngs(i, 1);
 				return false;
 			}
 		}
 		return true;
 	});
+	
+	var line = [];
+	featureLayer.eachLayer(function(layer) {
+		layer.setIcon(L.mapbox.marker.icon({'marker-color': '#ff7838'}));
+		bindPopup(layer);
+    	line.push(layer.getLatLng());
+ 	 });
+ 	 updatePolyline(line, polyline);
+ 	 
 });
 </script>
 
