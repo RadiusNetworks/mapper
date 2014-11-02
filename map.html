@@ -149,6 +149,9 @@ featureLayer.on('ready', function() {
 			min: new Date(dates[0]),
 			max: new Date(dates[dates.length - 1])
 	  	},
+	  	step:{
+    		minutes: 1
+ 		},
   	  	formatter:function(val){
         	var YYYY = val.getFullYear(),
         		MM = val.getMonth() + 1,
@@ -186,6 +189,7 @@ $("#slider").on("valuesChanging", function(e, data) {
 			));
 		bindPopup(layer);
     	line.push(layer.getLatLng());
+    	layer.openPopup();
  	 });
  	 updatePolyline(line, polyline);
  	 
