@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>example</title>
-    <link rel="stylesheet" href="http://developer.radiusnetworks.com/mapper/iThing.css" type="text/css" />
+    <link rel="stylesheet" href="http://developer.radiusnetworks.com/mapper/iThing-min.css" type="text/css" />
   </head>
   <body>
     <h1>Hello world</h1>
@@ -12,8 +12,46 @@
     <script src="http://developer.radiusnetworks.com/mapper/jquery-ui.min.js"></script>
     <script src="http://developer.radiusnetworks.com/mapper/jQDateRangeSlider-min.js"></script>
     <script>
+    
+    var datestring1 = "2014-09-16 12:37:02 UTC";
+    var datestring2 = "2014-15-16 12:37:02 UTC";
+    
+    function toDate(str) {
+    	ymd = str.split(" ")[0];
+    	hms = str.split(" ")[1];
+    	date = new Date(
+    		ymd.split("-")[0],
+    		ymd.split("-")[1],
+    		ymd.split("-")[2],
+    		hms.split(":")[0],
+    		hms.split(":")[1],
+    		hms.split(":")[2],
+    		0
+    	);
+    	return date;
+	}
+    
     //<!--
-      $("#slider").dateRangeSlider();
+    $("#slider").dateRangeSlider({
+	  bounds:{
+		min: new Date(toDate("2014-09-16 12:37:02 UTC")),
+		max: new Date(toDate("2014-15-16 12:37:02 UTC"))
+	  },
+	  defaultValues:{
+		min: new Date(toDate("2014-09-16 12:37:02 UTC")),
+		max: new Date(toDate("2014-15-16 12:37:02 UTC"))
+	  },
+  	  formatter:function(val){
+        var YYYY = val.getFullYear(),
+        	MM = val.getMonth() + 1,
+        	DD = val.getDate();
+        	hh = val.getHours(),
+        	mm = val.getMinutes(),
+        	ss = val.getSeconds(); 
+        return YYYY + "-" + MM + "-" + DD + " " + hh + ":" + mm + ":" + ss + "UTC";
+      }
+	});
+
     //-->
     </script>
   </body>

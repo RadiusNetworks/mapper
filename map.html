@@ -3,14 +3,19 @@
 <head>
 <meta charset=utf-8 />
 <title>A simple map</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://developer.radiusnetworks.com/mapper/iThing-min.css" type="text/css" />
+<script src="http://developer.radiusnetworks.com/mapper/jquery.js"></script>
+<script src="http://developer.radiusnetworks.com/mapper/jquery-ui.min.js"></script>
+<script src="http://developer.radiusnetworks.com/mapper/jQDateRangeSlider-min.js"></script>
+  
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
+  #slider { position: absolute; bottom:0; width:100%; }
+}
 </style>
 </head>
 <body>
@@ -28,12 +33,12 @@
 </style>
 
 <div id='map'></div>
+<div id='slider'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRoZWxtcyIsImEiOiJ4aE9BbERzIn0.WcYmqbp2WUzljTZW_lOkbQ';
 
-var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {zoomControl: false})
+var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {zoomControl: false, attributionControl: false})
 	.setView([28.410207, -81.460927], 15);
-	
 L.control.zoomslider().addTo(map);
 
 // As with any other AJAX request, this technique is subject to the Same Origin Policy:
@@ -44,15 +49,34 @@ var featureLayer = L.mapbox.featureLayer()
     .loadURL('http://developer.radiusnetworks.com/mapper/SEA_0008_0005.geojson')
     .addTo(map);
     
+function toDate(str) {
+	ymd = str.split(" ")[0];
+	hms = str.split(" ")[1];
+	date = new Date(
+		ymd.split("-")[0],
+		ymd.split("-")[1],
+		ymd.split("-")[2],
+		hms.split(":")[0],
+		hms.split(":")[1],
+		hms.split(":")[2],
+		0
+	);
+	return date;
+}
+    
 featureLayer.on('ready', function() {
 
 	// Note that calling `.eachLayer` here depends on setting GeoJSON _directly_
 	// above. If you're loading GeoJSON asynchronously, like from CSV or from a file,
 	// you will need to do this within a `featureLayer.on('ready'` event.
+	var dates = [], date;
 	featureLayer.eachLayer(function(layer) {
 	
-		var date = layer.feature.properties.Date;
-
+		if (layer.feature.geometry.type === "Point") {
+			date = toDate(layer.feature.properties.Date);
+			dates.push(date);
+		}
+			
 		// here you call `bindPopup` with a string of HTML you create - the feature
 		// properties declared above are available under `layer.feature.properties`
 		var content = '<h2>' + layer.feature.properties.Name + '<\/h2>' +
@@ -60,6 +84,44 @@ featureLayer.on('ready', function() {
 			'<p>' + layer.feature.properties.Location + '<\/p>';
 		layer.bindPopup(content);
 	});
+
+	$("#slider").dateRangeSlider({
+		bounds:{
+			min: new Date(dates[0]),
+			max: new Date(dates[dates.length - 1])
+		},
+		defaultValues:{
+			min: new Date(dates[0]),
+			max: new Date(dates[dates.length - 1])
+	  	},
+  	  	formatter:function(val){
+        	var YYYY = val.getFullYear(),
+        		MM = val.getMonth() + 1,
+        		DD = val.getDate();
+        		hh = val.getHours(),
+        		mm = val.getMinutes(),
+        		ss = val.getSeconds(); 
+        return YYYY + "-" + MM + "-" + DD + " " + hh + ":" + mm + ":" + ss + "UTC";
+    	}
+	});
+	
+});
+
+$("#slider").on("valuesChanging", function(e, data) {
+	
+	featureLayer.setFilter(function(feature) {
+		console.log("hello");
+		if (feature.geometry.type === "Point") {
+			date = toDate(feature.properties.Date);
+			if ((date < data.values.min) || (date > data.values.max)) {
+				return false;
+			}
+		}
+		return true;
+    });
+
+
+  
 });
 
 </script>
