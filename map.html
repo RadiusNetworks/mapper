@@ -63,7 +63,8 @@ function toDate(str) {
 	);
 	return date;
 }
-    
+
+
 featureLayer.on('ready', function() {
 
 	// Note that calling `.eachLayer` here depends on setting GeoJSON _directly_
@@ -83,7 +84,17 @@ featureLayer.on('ready', function() {
 			'<p>' + layer.feature.properties.Date + '</p>' +
 			'<p>' + layer.feature.properties.Location + '<\/p>';
 		layer.bindPopup(content);
+		
 	});
+
+	var line = [];
+	this.eachLayer(function(marker) {
+    	line.push(marker.getLatLng());
+ 	 });
+	var polyline_options = {
+   		color: '#000'
+	};
+	var polyline = L.polyline(line, polyline_options).addTo(map);
 
 	$("#slider").dateRangeSlider({
 		bounds:{
@@ -108,9 +119,8 @@ featureLayer.on('ready', function() {
 });
 
 $("#slider").on("valuesChanging", function(e, data) {
-	
-	featureLayer.setFilter(function(feature) {
-		console.log("hello");
+
+	featureLayer.setFilter(function(feature) {	
 		if (feature.geometry.type === "Point") {
 			date = toDate(feature.properties.Date);
 			if ((date < data.values.min) || (date > data.values.max)) {
@@ -118,12 +128,8 @@ $("#slider").on("valuesChanging", function(e, data) {
 			}
 		}
 		return true;
-    });
-
-
-  
+	});
 });
-
 </script>
 
 </body>
