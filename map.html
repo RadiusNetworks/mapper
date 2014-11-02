@@ -53,7 +53,7 @@ var map = L.mapbox.map('map', 'davidhelms.k42a1dik', {
 		attributionControl: false,
     	legendControl: { position: 'topright' }
     })
-	.setView([28.410207, -81.460927], 5);
+	.setView([28.410207, -81.460927], 15);
 	
 map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 	
@@ -98,6 +98,13 @@ function bindPopup(layer) {
 	layer.bindPopup(content);
 }
 
+
+featureLayer.on('mouseover', function(e) {
+    e.layer.openPopup();
+});
+featureLayer.on('mouseout', function(e) {
+    e.layer.closePopup();
+});
 
 featureLayer.on('ready', function() {
 
@@ -183,6 +190,9 @@ $("#slider").on("valuesChanging", function(e, data) {
  	 updatePolyline(line, polyline);
  	 
 });
+
+
+
 </script>
 
 </body>
