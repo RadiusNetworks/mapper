@@ -19,14 +19,14 @@ for row in all_rows:
 		'features':[]
 	}
 
-	line = {
-		'type':'Feature',
-		'properties':{},
-		'geometry':{
-			'type':'LineString',
-			'coordinates':[]
-		}
-	}
+# 	line = {
+# 		'type':'Feature',
+# 		'properties':{},
+# 		'geometry':{
+# 			'type':'LineString',
+# 			'coordinates':[]
+# 		}
+# 	}
 
 	# sightings query
 	sighting_query = 'select \
@@ -68,13 +68,13 @@ for row in all_rows:
 		}
 		geo['features'].append(feature)
 	
-		line['geometry']['coordinates'].append([
-			row[2],
-			row[1]
-		])
-
-	# add line feature to feature collection
-	geo['features'].append(line)
+# 		line['geometry']['coordinates'].append([
+# 			row[2],
+# 			row[1]
+# 		])
+# 
+# 	# add line feature to feature collection
+# 	geo['features'].append(line)
 
 	filename = beacon + '.geojson'
 	print filename
